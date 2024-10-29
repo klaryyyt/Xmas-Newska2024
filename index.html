@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Advent Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="background-overlay"></div> <!-- Background overlay div -->
+  <h1>Security Advent Calendar</h1>
+  <div class="calendar-container">
+    <!-- Calendar grid -->
+    <div class="calendar" id="calendar">
+      <!-- 24 clickable cells -->
+      <div class="day" data-message="Today’s Tip: Use a Password Manager">1</div>
+      <div class="day" data-message="Free security training webinar!">2</div>
+      <div class="day" data-message="Phishing Awareness Game – Join Today!">3</div>
+      <div class="day" data-message="MFA: A simple way to secure your accounts">4</div>
+      <div class="day" data-message="Today’s Tip: Back up your data regularly">5</div>
+      <div class="day" data-message="Cybersecurity Q&A Session! Ask your questions.">6</div>
+      <div class="day" data-message="Security awareness quiz – Win a prize!">7</div>
+      <div class="day" data-message="Free security checkup for your device">8</div>
+      <div class="day" data-message="Avoid public Wi-Fi for sensitive work.">9</div>
+      <div class="day" data-message="Your data is protected by encryption!">10</div>
+      <div class="day" data-message="Spot the phishing email challenge.">11</div>
+      <div class="day" data-message="Holiday Security Tips – Stay Safe Online!">12</div>
+      <div class="day" data-message="Volunteer as a security champion.">13</div>
+      <div class="day" data-message="Secure remote work – tips and best practices">14</div>
+      <div class="day" data-message="Today’s Tip: Update your software regularly!">15</div>
+      <div class="day" data-message="Personal cybersecurity tips for your family.">16</div>
+      <div class="day" data-message="Free password manager subscription.">17</div>
+      <div class="day" data-message="Security Check: Is your phone secure?">18</div>
+      <div class="day" data-message="Security experts available for questions!">19</div>
+      <div class="day" data-message="Holiday Contest: Strongest password wins!">20</div>
+      <div class="day" data-message="Secure Wi-Fi: Tips for home networks">21</div>
+      <div class="day" data-message="Fun: Take our cybersecurity trivia quiz!">22</div>
+      <div class="day" data-message="Safe Online Shopping: Use a secure payment gateway.">23</div>
+      <div class="day" data-message="Thank you for staying secure!">24</div>
+    </div>
+  </div>
+
+  <!-- Modal for message display -->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="messageText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
