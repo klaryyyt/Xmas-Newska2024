@@ -6,30 +6,44 @@ body {
     padding: 0;
   }
 
-/* Background image with an overlay */
-.background-overlay {
-  position: fixed;
+
+body::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://images.pexels.com/photos/1303085/pexels-photo-1303085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/christmas/35_-_christmas.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* 30% opacity */
-  z-index: -1; /* Ensure the background is behind all content */
+  background-repeat: no-repeat;
+ /* opacity: 0.6; /* Only the background image has reduced opacity */
+  z-index: -1; /* Places the pseudo-element behind the content */
 }
 
   h1 {
-    margin-top: 20px;
+  /*  margin-top: 40px;
+  /*  color: #0c0c0c ;
+  /*  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); /* Horizontal, Vertical, Blur Radius, Color */
+  /*  color: white; /* Optional: Ensures the text is visible */
+  margin-top: 40px;
+  color: #f3f0f0; /* Black text */
+  font-size: 48px; /* Large font size */
+  font-weight: bold; /* Bold font */
+  text-transform: uppercase; /* Make it uppercase */
+  letter-spacing: 2px; /* Add space between letters */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  padding: 10px 10px; /* Add padding around the text */
   }
 
   .calendar {
     display: grid;
-    grid-template-columns: repeat(7, 100px);
+    grid-template-columns: repeat(6, 100px);
     gap: 10px;
     justify-content: center;
     padding: 20px;
+    
   }
 
   .day.current {
@@ -48,7 +62,7 @@ body {
   }
 
   .day.past {
-    background-color: #f5a623; /* Orange for past days */
+    background-color: #581818; /* Orange for past days */
     cursor: pointer;
   }
 
