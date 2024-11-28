@@ -44,7 +44,7 @@ days.forEach(day => {
       const img = document.createElement('img');
       img.src = message;
       img.alt = `Image for Day ${dayNumber}`;
-      img.style.maxWidth = '100%'; // Responsive styling
+      img.style.maxWidth = '80%'; // Responsive styling
       img.style.borderRadius = '10px'; // Optional styling
       messageContent.appendChild(img);
     } else if (message.includes('http')) {
