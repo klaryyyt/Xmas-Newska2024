@@ -18,13 +18,13 @@ days.forEach(day => {
 
   if (dayNumber < currentDay) {
     // Style past days
-    day.style.backgroundColor = '#581818'; // Red for past days
+    day.style.backgroundColor = '#013936'; // Green for past days
     day.style.color = '#ffffff'; // Set the text color (e.g., white)
     day.style.cursor = 'pointer'; // Allow clicking
     
   } else if (dayNumber === currentDay) {
     // Style the current day
-    day.style.backgroundColor = '#189e39'; // Green for today
+    day.style.backgroundColor = '#00D264'; // Green for today
     day.style.cursor = 'pointer'; // Allow clicking
   } else {
     // Style future days
@@ -82,3 +82,4 @@ window.addEventListener('click', function (event) {
     modal.style.display = 'none';
   }
 });
+
