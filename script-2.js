@@ -9,7 +9,7 @@ const messageContent = document.getElementById('messageContent');
 const closeModal = document.querySelector('.close');
 
 // Get today's date
-const today = new Date('11-12-2025');
+const today = new Date();
 const currentDay = today.getDate();
 
 // Iterate over each day element
@@ -82,5 +82,6 @@ window.addEventListener('click', function (event) {
     modal.style.display = 'none';
   }
 });
+
 
 
