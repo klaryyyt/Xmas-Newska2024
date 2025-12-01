@@ -14,7 +14,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/christmas/35_-_christmas.jpg');
+/*  background-image: url('https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/christmas/35_-_christmas.jpg'); */
+  background-image: url('tree.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,3 +109,4 @@ body::before {
     text-decoration: none;
     cursor: pointer;
   }
+
